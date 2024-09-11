@@ -1,0 +1,21 @@
+test_dataset:
+  dataset:
+    name: paired-image-folders
+    args:
+      root_path_1: ../liif/load/celebAHQ/64
+      root_path_2: ../liif/load/celebAHQ/64
+      split_file: ../liif/load/celebAHQ/split.json
+
+#      root_path_1: ./load/ade/ade_test_mask
+#      root_path_2: ./load/ade/ade_test_mask
+#      split_file: ./load/celebAHQ/split.json
+      split_key: val
+      cache: bin
+  wrapper:
+    name: sr-implicit-uniform-varied
+    args: {}
+  batch_size: 1
+
+#data_norm:
+#  inp: {sub: [0.5], div: [0.5]}
+#  gt: {sub: [0.5], div: [0.5]}
