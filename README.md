@@ -28,3 +28,18 @@ We propose the semantic-aware implicit representation by learning semantic-aware
 **Train**: `python train_liif.py --config configs/train-celebAHQ/[CONFIG_NAME].yaml`.
 
 **Test**: `python test.py --config configs/test/test-celebAHQ-32-256.yaml --model [MODEL_PATH]` (or `test-celebAHQ-64-128.yaml` for another task). We use `epoch-best.pth` in corresponding save folder.
+
+## Bibtex
+
+```
+
+@inproceedings{zhang2025sair,
+  title={Sair: Learning semantic-aware implicit representation},
+  author={Zhang, Canyu and Li, Xiaoguang and Guo, Qing and Wang, Song},
+  booktitle={European Conference on Computer Vision},
+  pages={319--335},
+  year={2025},
+  organization={Springer}
+}
+
+```
